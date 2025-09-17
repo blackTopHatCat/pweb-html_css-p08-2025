@@ -1,0 +1,53 @@
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif; 
+    
+    margin: 0;
+    
+    height:100%;
+    min-height:100%; 
+}
+
+h1 { margin-bottom: 0; }
+hr { color: brown; }
+
+div.short-profile {
+    background-color: yellow;
+    
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    
+    padding-top: 10%;
+    height: 100%;
+    min-height:100%; 
+}
+
+div.contact-info  {
+    background-color: white;
+    border-radius: 3%;
+    
+    width: 25%;
+    padding: 0.1% 2%;
+}
+
+div.contact-info a:hover { color:red; }
+
+div.short-profile > img {
+    border: 5px solid whitesmoke;
+    border-radius: 50%;
+    
+    width: 10%;
+    height: auto;
+    
+    /* make it square */
+    aspect-ratio: 1;
+    object-fit: fill;
+}
+
+div.short-profile > img:hover {
+    border: 5px solid brown;
+    
+    width: 11%;
+    height: auto;
+}
+
