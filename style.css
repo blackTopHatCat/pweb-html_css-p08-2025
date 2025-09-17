@@ -30,10 +30,10 @@ div.contact-info  {
     padding: 0.1% 2%;
 }
 
-div.contact-info a:hover { color:red; }
+div.contact-info a:hover { color:red; font-size: 24px }
 
 div.short-profile > img {
-    border: 5px solid whitesmoke;
+    border: 5px solid brown;
     border-radius: 50%;
     
     width: 10%;
@@ -43,11 +43,3 @@ div.short-profile > img {
     aspect-ratio: 1;
     object-fit: fill;
 }
-
-div.short-profile > img:hover {
-    border: 5px solid brown;
-    
-    width: 11%;
-    height: auto;
-}
-
