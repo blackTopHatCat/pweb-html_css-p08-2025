@@ -15,6 +15,7 @@ div.short-profile {
     
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-flow: column nowrap;
     
     padding-top: 10%;
