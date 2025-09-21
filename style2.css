@@ -229,7 +229,6 @@ h2, h3, h4{ color: var(--brown); margin: 0 0 0.5rem 0; }
   .container{ padding: 0.5rem; }
 }
 
-/* Tablet dan HP */
 @media (max-width: 900px) {
   .cv-container {
     grid-template-columns: 1fr; /* sidebar & konten jadi 1 kolom */
