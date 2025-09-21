@@ -87,7 +87,6 @@ html,body{
   top: 0;
   height: fit-content;
   align-self: start;
-  /* make it sticky for longer pages */
   position: sticky;
   top: 1rem;
 }
@@ -140,6 +139,8 @@ html,body{
   padding: 1rem;
   border-radius: 14px;
   box-shadow: var(--shadow);
+   max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 /* Sections */
@@ -226,4 +227,37 @@ h2, h3, h4{ color: var(--brown); margin: 0 0 0.5rem 0; }
 @media (max-width: 420px){
   .nav a{ padding: 0.35rem 0.5rem; font-size: 0.9rem; }
   .container{ padding: 0.5rem; }
+}
+
+/* Tablet dan HP */
+@media (max-width: 900px) {
+  .cv-container {
+    grid-template-columns: 1fr; /* sidebar & konten jadi 1 kolom */
+  }
+
+  .sidebar {
+    position: relative; /* jangan sticky di mobile */
+    top: auto;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .edu-grid {
+    grid-template-columns: 1fr; /* education stack ke bawah */
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-pic {
+    max-width: 140px; /* biar ga terlalu besar */
+  }
+
+  .exp-grid {
+    grid-template-columns: 1fr; /* semua card 1 kolom */
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+  }
 }
